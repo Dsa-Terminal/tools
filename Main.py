@@ -9,10 +9,10 @@ def auto_get_ProgressBar(time):
         do_step(step, time)
 system('cls')
 print('Bem-vindo as ferramentas de controle de Terminal')
-print('1 - Limpar tela   2 - Nano   3 - GUI   4 - Sair')
+print('1 - Limpar tela   2 - Nano   3 - CMD.EXE  4 - Sair')
 while True:
     try:
-        p = int(input('> '))
+        p = int(input('\033[32m>\033[m '))
         if p == 1:
             system('cls')
             print('Bem-vindo as ferramentas de controle de Terminal')
@@ -21,8 +21,12 @@ while True:
             system(r'nano.exe')
             continue
         elif p == 3:
-            pass
+            system('title C:\Windows\System32\Cmd.exe')
+            system('cls')
+            system('cmd')
+            system('title [Tools] - Dsa Terminal')
         elif p == 4:
+            auto_get_ProgressBar(0.001)
             break
     except:
         continue
