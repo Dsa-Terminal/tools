@@ -18,7 +18,7 @@ while True:
             print('Bem-vindo as ferramentas de controle de Terminal')
             print('1 - Limpar tela   2 - Nano   3 - GUI   4 - Sair')
         elif p == 2:
-            system(r'nano')
+            system(r'nano.exe')
             continue
         elif p == 3:
             pass
